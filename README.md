@@ -174,7 +174,6 @@ $ sudo nano /etc/apache2/sites-available/000-default.conf
         DocumentRoot /var/www/catalog
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-        #Include conf-available/serve-cgi-bin.conf
         WSGIScriptAlias / /var/www/catalog/myapp.wsgi
         <Directory /var/www/catalog/>
                 Order allow,deny
@@ -192,3 +191,6 @@ $ sudo nano /etc/apache2/sites-available/000-default.conf
 ```sh
 $ sudo service apache2 restart
 ```
+
+##### Launch Application
+* Paste the ip address of the instance (XX.XX.XX.XX) in your browser to view application
