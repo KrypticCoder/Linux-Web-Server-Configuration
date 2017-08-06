@@ -45,7 +45,12 @@ SSH Port: 2200
     ```sh
     $ cat <public_key_name>.pub
     ```
-* Back in the VM for grader, create new **ssh** folder 
+* Back in the VM for ubuntu, switch to user grader
+    ```sh
+    $ sudo su - grader
+    ```
+
+* create new **ssh** folder 
     ```sh
     $ mkdir ~/.ssh
     ```
@@ -73,6 +78,11 @@ SSH Port: 2200
 * Find the *PermitRootLogin* line and edit it to **no**
 * Save the file
 * Run `$ sudo service ssh restart` to restart the service
+* Login is done with: 
+    ```sh
+    $ ssh -i grader@<IP Address> -i <path_to_grader_private_key> -p 2200
+    ```
+
 ##### 4. Change the local timezone to UTC
 
 ` $ sudo timedatectl set-timezone UTC`
