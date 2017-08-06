@@ -5,7 +5,7 @@
 
 #### Link to Recipes App
 ```
-IP Address: 52.33.52.40
+IP Address: 54.245.31.6
 SSH Port: 2200
 ```
 
