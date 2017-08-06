@@ -82,6 +82,11 @@ SSH Port: 2200
 $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
+* Configure `unattended-upgrades` to automatically install security upgrades
+    ```sh
+    $ sudo apt-get install unattended-upgrades
+    ```
+
     
 ##### 6. Configure the Uncompliated Firewall (UFW)
 ```sh
